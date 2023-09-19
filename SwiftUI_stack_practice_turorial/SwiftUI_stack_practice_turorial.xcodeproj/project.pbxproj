@@ -13,6 +13,7 @@
 		67DE632D2AB8976F00F9C71D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DE632C2AB8976F00F9C71D /* Preview Assets.xcassets */; };
 		67DE63342AB897AA00F9C71D /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE63332AB897AA00F9C71D /* MyProjectCard.swift */; };
 		67DE63362AB89D4100F9C71D /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE63352AB89D4100F9C71D /* MyBasicCard.swift */; };
+		F4C582162AB94BB300A8BC55 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C582152AB94BB300A8BC55 /* MyCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		67DE632C2AB8976F00F9C71D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67DE63332AB897AA00F9C71D /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
 		67DE63352AB89D4100F9C71D /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
+		F4C582152AB94BB300A8BC55 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				67DE632B2AB8976F00F9C71D /* Preview Content */,
 				67DE63332AB897AA00F9C71D /* MyProjectCard.swift */,
 				67DE63352AB89D4100F9C71D /* MyBasicCard.swift */,
+				F4C582152AB94BB300A8BC55 /* MyCard.swift */,
 			);
 			path = SwiftUI_stack_practice_turorial;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				67DE63342AB897AA00F9C71D /* MyProjectCard.swift in Sources */,
 				67DE63282AB8976E00F9C71D /* ContentView.swift in Sources */,
 				67DE63362AB89D4100F9C71D /* MyBasicCard.swift in Sources */,
+				F4C582162AB94BB300A8BC55 /* MyCard.swift in Sources */,
 				67DE63262AB8976E00F9C71D /* SwiftUI_stack_practice_turorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
