@@ -16,6 +16,7 @@
 		67DE63382AB9C41300F9C71D /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE63372AB9C41300F9C71D /* MyListView.swift */; };
 		67DE633A2AB9DC0900F9C71D /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE63392AB9DC0900F9C71D /* MyNavigationView.swift */; };
 		67DE633C2AB9DF8500F9C71D /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE633B2AB9DF8500F9C71D /* MyProfileView.swift */; };
+		67DE633E2ABBEB7700F9C71D /* MyGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE633D2ABBEB7700F9C71D /* MyGeometryReader.swift */; };
 		F4C582162AB94BB300A8BC55 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C582152AB94BB300A8BC55 /* MyCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		67DE63372AB9C41300F9C71D /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 		67DE63392AB9DC0900F9C71D /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
 		67DE633B2AB9DF8500F9C71D /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		67DE633D2ABBEB7700F9C71D /* MyGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReader.swift; sourceTree = "<group>"; };
 		F4C582152AB94BB300A8BC55 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				F4C582152AB94BB300A8BC55 /* MyCard.swift */,
 				67DE63372AB9C41300F9C71D /* MyListView.swift */,
 				67DE633B2AB9DF8500F9C71D /* MyProfileView.swift */,
+				67DE633D2ABBEB7700F9C71D /* MyGeometryReader.swift */,
 			);
 			path = SwiftUI_stack_practice_turorial;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				67DE63282AB8976E00F9C71D /* ContentView.swift in Sources */,
 				67DE63362AB89D4100F9C71D /* MyBasicCard.swift in Sources */,
 				F4C582162AB94BB300A8BC55 /* MyCard.swift in Sources */,
+				67DE633E2ABBEB7700F9C71D /* MyGeometryReader.swift in Sources */,
 				67DE63262AB8976E00F9C71D /* SwiftUI_stack_practice_turorialApp.swift in Sources */,
 				67DE633A2AB9DC0900F9C71D /* MyNavigationView.swift in Sources */,
 			);

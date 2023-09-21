@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_stack_practice_turorialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyGeometryReader()
         }
     }
 }
