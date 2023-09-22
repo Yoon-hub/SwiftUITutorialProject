@@ -8,49 +8,70 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isNavigationBarHidden: Bool = false
+    
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            
-            VStack(alignment: .leading, spacing: 0) {
+        
+        NavigationView {
+            ZStack(alignment: .bottomTrailing) {
                 
-                HStack {
-                    Image(systemName: "line.horizontal.3")
-                        .font(.system(size: 30))
-                    Spacer()
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.system(size: 30))
-
-                }
-                
-                Text("천원 할 일목록")
-                    .font(.system(size: 40))
-                    .fontWeight(.black)
+                VStack(alignment: .leading, spacing: 0) {
                     
-                
-                ScrollView {
-                    VStack {
-                        MyProjectCard()
-                        MyBasicCard()
-                        MyCard(icon: "tray.fill", title: "책상 정리", start: "1 PM", end: "3 PM", bgColor: .blue)
-                        MyCard(icon: "book.fill", title: "책읽기", start: "1 PM", end: "3 PM", bgColor: .green)
-                        MyCard(icon: "cert.fill", title: "책읽기", start: "1 PM", end: "3 PM", bgColor: .red)
+                    HStack {
+                        NavigationLink(destination: MyListView(isNaviagtionBarHidden: self.$isNavigationBarHidden)) {
+                            Image(systemName: "line.horizontal.3")
+                                .font(.system(size: 30))
+                                .foregroundColor(.black)
+                        }
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: MyProfileView()) {
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.system(size: 30))
+                                .foregroundColor(.black)
+                        
+                        }
+
+                        
                     }
                     
-                }
-
-            }.padding(10)
-            
-            Circle()
-                .foregroundColor(.yellow)
-                .frame(width: 60, height: 60)
-                .overlay(
-                    Image(systemName: "plus")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                )
-                .padding(.trailing, 10)
-                .shadow(radius: 10) // 그림자 범위
-            
+                    Text("천원 할 일목록")
+                        .font(.system(size: 40))
+                        .fontWeight(.black)
+                    
+                    
+                    ScrollView {
+                        VStack {
+                            MyProjectCard()
+                            MyBasicCard()
+                            MyCard(icon: "tray.fill", title: "책상 정리", start: "1 PM", end: "3 PM", bgColor: .blue)
+                            MyCard(icon: "book.fill", title: "책읽기", start: "1 PM", end: "3 PM", bgColor: .green)
+                            MyCard(icon: "cert.fill", title: "책읽기", start: "1 PM", end: "3 PM", bgColor: .red)
+                        }
+                        
+                    }
+                    
+                }.padding(10)
+                
+                Circle()
+                    .foregroundColor(.yellow)
+                    .frame(width: 60, height: 60)
+                    .overlay(
+                        Image(systemName: "plus")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                    )
+                    .padding(.trailing, 10)
+                    .shadow(radius: 10) // 그림자 범위
+                
+            }
+            .navigationTitle("")
+            .navigationBarHidden(self.isNavigationBarHidden)
+            .onAppear {
+                self.isNavigationBarHidden = true
+            }
         }
         
     }
