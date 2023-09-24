@@ -11,6 +11,10 @@ struct MyGeometryReader: View {
     
     @State private var color: Int = 0
     
+    let centerPostion: (GeometryProxy) -> CGPoint = { proxy in
+        return CGPoint(x: proxy.frame(in: .local).midX, y: proxy.frame(in: .local).midY)
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             VStack (alignment: .center, spacing: 0){
@@ -53,6 +57,7 @@ struct MyGeometryReader: View {
                 }
             }
             .frame(width: geometry.size.width)
+            .position(centerPostion(geometry))
         }
         
         
