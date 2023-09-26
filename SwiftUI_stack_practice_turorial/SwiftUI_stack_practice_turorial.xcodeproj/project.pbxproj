@@ -19,6 +19,7 @@
 		67DE633E2ABBEB7700F9C71D /* MyGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE633D2ABBEB7700F9C71D /* MyGeometryReader.swift */; };
 		67DE63402ABFBDA100F9C71D /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE633F2ABFBDA100F9C71D /* MyTabView.swift */; };
 		67DE63422AC132F300F9C71D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE63412AC132F300F9C71D /* MyView.swift */; };
+		67DE63442AC1398D00F9C71D /* MyCustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE63432AC1398D00F9C71D /* MyCustomTabView.swift */; };
 		F4C582162AB94BB300A8BC55 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C582152AB94BB300A8BC55 /* MyCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		67DE633D2ABBEB7700F9C71D /* MyGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReader.swift; sourceTree = "<group>"; };
 		67DE633F2ABFBDA100F9C71D /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
 		67DE63412AC132F300F9C71D /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		67DE63432AC1398D00F9C71D /* MyCustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTabView.swift; sourceTree = "<group>"; };
 		F4C582152AB94BB300A8BC55 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				67DE633D2ABBEB7700F9C71D /* MyGeometryReader.swift */,
 				67DE633F2ABFBDA100F9C71D /* MyTabView.swift */,
 				67DE63412AC132F300F9C71D /* MyView.swift */,
+				67DE63432AC1398D00F9C71D /* MyCustomTabView.swift */,
 			);
 			path = SwiftUI_stack_practice_turorial;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				67DE633E2ABBEB7700F9C71D /* MyGeometryReader.swift in Sources */,
 				67DE63262AB8976E00F9C71D /* SwiftUI_stack_practice_turorialApp.swift in Sources */,
 				67DE633A2AB9DC0900F9C71D /* MyNavigationView.swift in Sources */,
+				67DE63442AC1398D00F9C71D /* MyCustomTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

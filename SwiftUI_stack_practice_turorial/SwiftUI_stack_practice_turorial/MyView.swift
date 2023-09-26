@@ -14,14 +14,14 @@ struct MyView: View {
     
     var body: some View {
         ZStack {
-            color?
-                .edgesIgnoringSafeArea(.all)
+            color
+                //.edgesIgnoringSafeArea(.all)
             Text(text!)
                 .font(.system(size: 40))
                 .foregroundColor(.white)
                 .fontWeight(.bold)
         
-        }
+        }.animation(.none)
         
     }
     
