@@ -33,6 +33,8 @@ struct MyFilteredList: View {
         }
         
         _myFriendsList = State(initialValue: newList) // State 속성 초기화
+        //myFriendsList = newList
+    
     }
     
     var body: some View {

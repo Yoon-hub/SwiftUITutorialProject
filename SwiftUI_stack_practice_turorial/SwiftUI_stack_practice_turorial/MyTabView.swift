@@ -28,10 +28,9 @@ struct MyTabView: View {
                 }
                 .tag(2)
         }
-        .onAppear() {
-            UITabBar.appearance().backgroundColor = .white
-        }
-        .toolbarBackground(.red, for: .tabBar)
+//        .onAppear() {
+//            UITabBar.appearance().backgroundColor = .red
+//        }
         
         
     
