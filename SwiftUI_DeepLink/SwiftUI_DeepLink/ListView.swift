@@ -16,11 +16,15 @@ struct ListView: View {
             
             List {
                 ForEach(workList, id: \.self) { item in
-                    Text(item)
+                    NavigationLink(destination: Text("\(item)")) {
+                        Text(item)
+                            .foregroundColor(.black)
+                    }
+                
                 }
             }
         }
-        .navigationTitle("할일 목록")
+        .navigationBarTitle(Text("할일 목록"))
     }
 }
 
