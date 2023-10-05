@@ -1,0 +1,42 @@
+//
+//  DeiceView.swift
+//  SwiftUI_Redux_tutorial
+//
+//  Created by 최윤제 on 2023/10/04.
+//
+
+import SwiftUI
+
+struct DiceView: View {
+    var body: some View {
+        
+        VStack(spacing: 5) {
+            Text("⚀")
+                .font(.system(size: 300))
+                .foregroundColor(Color.purple)
+            
+            Button {
+                
+            } label: {
+                Text("랜덤 주사위 돌리기")
+                    .font(.system(size: 40))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .background(Color.purple)
+                    .cornerRadius(20)
+            
+            }
+
+        }
+        
+        
+    }
+}
+
+struct DiceView_Previews: PreviewProvider {
+    static var previews: some View {
+        DiceView()
+    }
+}
+
