@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct DiceView: View {
+    
+    @EnvironmentObject var store: AppStore
+    
+    func rollTheDice() {
+        self.store.dispatch(action: .rollTheDice)
+    }
+    
     var body: some View {
         
         VStack(spacing: 5) {
-            Text("⚀")
+            Text(self.store.state.currentDice)
                 .font(.system(size: 300))
                 .foregroundColor(Color.purple)
             
             Button {
-                
+                self.rollTheDice()
             } label: {
                 Text("랜덤 주사위 돌리기")
                     .font(.system(size: 40))

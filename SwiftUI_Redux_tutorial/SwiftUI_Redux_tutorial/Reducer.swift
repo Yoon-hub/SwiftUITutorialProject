@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+typealias Reducer<State, Action> = (inout State, Action) -> Void
+
+func appReducer(state: inout AppState, action: AppAction) {
+    switch action {
+    case .rollTheDice:
+        state.currentDice = [ "⚀", "⚁", "⚂", "⚃", "⚄", "⚅"].randomElement()!
+    }
+}
+

@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let store = AppStore(state: AppState.init(currentDice: "⚀"), reducer: appReducer(state:action:))
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("아아아")
+            .font(.system(size: 20))
+            .fontWeight(.bold)
+            .foregroundColor(Color.white)
+            .padding()
+            .background(Color.purple)
     }
 }
 

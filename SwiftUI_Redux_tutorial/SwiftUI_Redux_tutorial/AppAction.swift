@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+// state 변경을 위한 액션
+
+enum AppAction: String {
+    case rollTheDice
+}

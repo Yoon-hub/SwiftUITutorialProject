@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+// 앱의 상태
+struct AppState {
+    
+    var currentDice: String = "⚀"
+    
+}
