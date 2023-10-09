@@ -15,11 +15,20 @@ class RandomUserViewModel: ObservableObject {
     
     @Published var randomUserList = [randomUserUseData]()
     
+    var refreshActionSubject = PassthroughSubject<Void, Never>()
+    
     init() {
         fetchRandomUsers()
+        
+        refreshActionSubject.sink { [weak self] _ in
+            self?.fetchRandomUsers()
+        }.store(in: &subscription)
     }
     
     func fetchRandomUsers() {
+        
+        randomUserList = []
+        
         AF.request(RandomUserAPi.requestAll.url)
             .publishDecodable(type: RandomUser.self)
             .compactMap {  // opitonal Value unwrap

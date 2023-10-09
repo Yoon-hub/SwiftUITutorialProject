@@ -6,9 +6,29 @@
 //
 
 import SwiftUI
+import UIKit
 
 import URLImage
 import SwiftUI
+import SwiftUIIntrospect
+
+class RefreshControlHelper {
+    
+    var parentContentView: ContentView?
+    var refreshControl: UIRefreshControl?
+    
+    @objc func didRefresh() {
+        guard let parentContentView, let refreshControl else {return}
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+            
+            parentContentView.viewModel.refreshActionSubject.send()
+            
+            refreshControl.endRefreshing()
+        }
+    }
+    
+}
 
 struct randomUserUseData: Identifiable {
     let id = UUID()
@@ -19,6 +39,8 @@ struct randomUserUseData: Identifiable {
 struct ContentView: View {
     
     @ObservedObject var viewModel = RandomUserViewModel()
+    
+    let refreshControlHelper = RefreshControlHelper()
     
     var body: some View {
         VStack {
@@ -39,9 +61,19 @@ struct ContentView: View {
                         .fontWeight(.bold)
                 }
             }
+            .introspect(.scrollView, on: .iOS(.v13, .v14, .v15, .v16, .v17)) { tableView in
+                
+                let myRefresh = UIRefreshControl()
+                
+                refreshControlHelper.refreshControl = myRefresh
+                refreshControlHelper.parentContentView = self
+                myRefresh.addTarget(refreshControlHelper, action: #selector(RefreshControlHelper.didRefresh), for: .valueChanged)
+                
+                tableView.refreshControl = myRefresh
+            }
             .listStyle(PlainListStyle())
+
         }
-        .padding()
 //        .task {
 //            APIService.shared.apiIntegration(type: RandomUser.self, api: .requestAll, method: .get) { result, statusCode in
 //                

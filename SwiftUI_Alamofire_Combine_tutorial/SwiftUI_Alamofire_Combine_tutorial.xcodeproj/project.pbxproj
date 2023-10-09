@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67B058ED2AD3A89700A2CCD5 /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B058EC2AD3A89700A2CCD5 /* RandomUserViewModel.swift */; };
+		67B058F62AD3FE6400A2CCD5 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 67B058F52AD3FE6400A2CCD5 /* SwiftUIIntrospect */; };
+		67B058F82AD40A9F00A2CCD5 /* CombineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B058F72AD40A9F00A2CCD5 /* CombineTest.swift */; };
 		67DE64682AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE64672AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift */; };
 		67DE646A2AD390FB00F9C71D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE64692AD390FB00F9C71D /* ContentView.swift */; };
 		67DE646C2AD390FC00F9C71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DE646B2AD390FC00F9C71D /* Assets.xcassets */; };
@@ -21,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		67B058EC2AD3A89700A2CCD5 /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
+		67B058F72AD40A9F00A2CCD5 /* CombineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTest.swift; sourceTree = "<group>"; };
 		67DE64642AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Alamofire_Combine_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE64672AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Alamofire_Combine_tutorialApp.swift; sourceTree = "<group>"; };
 		67DE64692AD390FB00F9C71D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B058F62AD3FE6400A2CCD5 /* SwiftUIIntrospect in Frameworks */,
 				67DE647A2AD3950C00F9C71D /* URLImage in Frameworks */,
 				67DE64772AD394DE00F9C71D /* Alamofire in Frameworks */,
 			);
@@ -69,6 +73,7 @@
 				67DE646B2AD390FC00F9C71D /* Assets.xcassets */,
 				67DE646D2AD390FC00F9C71D /* Preview Content */,
 				67B058EC2AD3A89700A2CCD5 /* RandomUserViewModel.swift */,
+				67B058F72AD40A9F00A2CCD5 /* CombineTest.swift */,
 			);
 			path = SwiftUI_Alamofire_Combine_tutorial;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			packageProductDependencies = (
 				67DE64762AD394DE00F9C71D /* Alamofire */,
 				67DE64792AD3950C00F9C71D /* URLImage */,
+				67B058F52AD3FE6400A2CCD5 /* SwiftUIIntrospect */,
 			);
 			productName = SwiftUI_Alamofire_Combine_tutorial;
 			productReference = 67DE64642AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorial.app */;
@@ -142,6 +148,7 @@
 			packageReferences = (
 				67DE64752AD394DE00F9C71D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				67DE64782AD3950C00F9C71D /* XCRemoteSwiftPackageReference "url-image" */,
+				67B058F42AD3FE6400A2CCD5 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
 			);
 			productRefGroup = 67DE64652AD390FB00F9C71D /* Products */;
 			projectDirPath = "";
@@ -170,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DE646A2AD390FB00F9C71D /* ContentView.swift in Sources */,
+				67B058F82AD40A9F00A2CCD5 /* CombineTest.swift in Sources */,
 				67DE64682AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift in Sources */,
 				67DE64822AD3974100F9C71D /* EndPoint.swift in Sources */,
 				67DE647F2AD396BE00F9C71D /* APIService.swift in Sources */,
@@ -375,6 +383,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		67B058F42AD3FE6400A2CCD5 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.0;
+			};
+		};
 		67DE64752AD394DE00F9C71D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -394,6 +410,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		67B058F52AD3FE6400A2CCD5 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67B058F42AD3FE6400A2CCD5 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
 		67DE64762AD394DE00F9C71D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67DE64752AD394DE00F9C71D /* XCRemoteSwiftPackageReference "Alamofire" */;
