@@ -10,6 +10,7 @@
 		67B058ED2AD3A89700A2CCD5 /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B058EC2AD3A89700A2CCD5 /* RandomUserViewModel.swift */; };
 		67B058F62AD3FE6400A2CCD5 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 67B058F52AD3FE6400A2CCD5 /* SwiftUIIntrospect */; };
 		67B058F82AD40A9F00A2CCD5 /* CombineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B058F72AD40A9F00A2CCD5 /* CombineTest.swift */; };
+		67B058FA2AD4481A00A2CCD5 /* RandomUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B058F92AD4481A00A2CCD5 /* RandomUserRouter.swift */; };
 		67DE64682AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE64672AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift */; };
 		67DE646A2AD390FB00F9C71D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE64692AD390FB00F9C71D /* ContentView.swift */; };
 		67DE646C2AD390FC00F9C71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DE646B2AD390FC00F9C71D /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		67B058EC2AD3A89700A2CCD5 /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
 		67B058F72AD40A9F00A2CCD5 /* CombineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTest.swift; sourceTree = "<group>"; };
+		67B058F92AD4481A00A2CCD5 /* RandomUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRouter.swift; sourceTree = "<group>"; };
 		67DE64642AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Alamofire_Combine_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE64672AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Alamofire_Combine_tutorialApp.swift; sourceTree = "<group>"; };
 		67DE64692AD390FB00F9C71D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,10 +72,10 @@
 				67DE647B2AD3968200F9C71D /* API */,
 				67DE64672AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift */,
 				67DE64692AD390FB00F9C71D /* ContentView.swift */,
-				67DE646B2AD390FC00F9C71D /* Assets.xcassets */,
-				67DE646D2AD390FC00F9C71D /* Preview Content */,
 				67B058EC2AD3A89700A2CCD5 /* RandomUserViewModel.swift */,
 				67B058F72AD40A9F00A2CCD5 /* CombineTest.swift */,
+				67DE646B2AD390FC00F9C71D /* Assets.xcassets */,
+				67DE646D2AD390FC00F9C71D /* Preview Content */,
 			);
 			path = SwiftUI_Alamofire_Combine_tutorial;
 			sourceTree = "<group>";
@@ -92,6 +94,7 @@
 				67DE647C2AD3968D00F9C71D /* RandomUser.swift */,
 				67DE647E2AD396BE00F9C71D /* APIService.swift */,
 				67DE64812AD3974100F9C71D /* EndPoint.swift */,
+				67B058F92AD4481A00A2CCD5 /* RandomUserRouter.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				67DE646A2AD390FB00F9C71D /* ContentView.swift in Sources */,
 				67B058F82AD40A9F00A2CCD5 /* CombineTest.swift in Sources */,
+				67B058FA2AD4481A00A2CCD5 /* RandomUserRouter.swift in Sources */,
 				67DE64682AD390FB00F9C71D /* SwiftUI_Alamofire_Combine_tutorialApp.swift in Sources */,
 				67DE64822AD3974100F9C71D /* EndPoint.swift in Sources */,
 				67DE647F2AD396BE00F9C71D /* APIService.swift in Sources */,

@@ -18,10 +18,14 @@ struct RandomUser: Codable, CustomStringConvertible {
 }
 
 // MARK: - Info
-struct Info: Codable {
+struct Info: Codable, CustomStringConvertible {
     let seed: String
     let results, page: Int
     let version: String
+    
+    var description: String {
+        return "seed: \(seed) / resultsCount(\(results)"
+    }
 }
 
 // MARK: - Result

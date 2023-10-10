@@ -36,6 +36,12 @@ struct randomUserUseData: Identifiable {
     let imageURL: String
 }
 
+extension randomUserUseData: Equatable {
+    static func == (lhs: randomUserUseData, rhs: randomUserUseData) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
 struct ContentView: View {
     
     @ObservedObject var viewModel = RandomUserViewModel()
@@ -60,6 +66,11 @@ struct ContentView: View {
                         .font(.system(size: 20))
                         .fontWeight(.bold)
                 }
+                .onAppear {
+                    if self.viewModel.randomUserList.last == item {
+                        viewModel.fetchMoreActionSubject.send()
+                    }
+                }
             }
             .introspect(.scrollView, on: .iOS(.v13, .v14, .v15, .v16, .v17)) { tableView in
                 
@@ -73,22 +84,12 @@ struct ContentView: View {
             }
             .listStyle(PlainListStyle())
 
+            if viewModel.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color.yellow))
+                    .scaleEffect(1.8, anchor: .center)
+            }
         }
-//        .task {
-//            APIService.shared.apiIntegration(type: RandomUser.self, api: .requestAll, method: .get) { result, statusCode in
-//                
-//                switch result {
-//                case .success(let data):
-//                    print(data.results)
-//                    data.results.forEach { item in
-//                        randomUserList.append(randomUserUseData(name: item.name.first + " " + item.name.last, imageURL: item.picture.large))
-//                    }
-//                case .failure(let error):
-//                    print(error)
-//                }
-//                
-//            }
-//        }
     }
 }
 
