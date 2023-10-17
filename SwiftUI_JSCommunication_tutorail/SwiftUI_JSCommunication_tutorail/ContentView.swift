@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var textString = "더미 텍스트"
+    @State var showAlert = false
+    
     var body: some View {
         
         NavigationView {
@@ -19,10 +23,18 @@ struct ContentView: View {
                 .navigationTitle(Text("네이게이션 타이틀"))
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(leading: siteMenu, trailing: Button(action: {
-                    print("trailing Button")
+                    self.showAlert.toggle()
                 }, label: {
                     Text("트레일링")
-                }))
+                }) )
+                
+                if self.showAlert { createTextAlert() }
+                Text(textString)
+                    .font(.system(size: 26))
+                    .fontWeight(.bold)
+                    .background(Color.purple)
+                    .offset(y: -(UIScreen.main.bounds.height * 0.3))
+                    
             } // zstack
         } // navigationView
         
@@ -33,7 +45,7 @@ struct ContentView: View {
             Button {
                 print("정대리 웹뷰 이동")
             } label: {
-                Text("정대리 웹뷰 이동") 
+                Text("정대리 웹뷰 이동")
             }
             Button {
                 print("네이버로 이동")
@@ -88,6 +100,12 @@ struct ContentView: View {
             }.frame(height: 45)
             Divider()
         }
+    }
+}
+
+extension ContentView {
+    func createTextAlert() -> MyTextAlertView {
+        MyTextAlertView(textString: $textString, showAlert: $showAlert, title: "iOS -> JS", message: "")
     }
 }
 

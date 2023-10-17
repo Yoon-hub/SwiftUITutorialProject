@@ -12,6 +12,7 @@
 		67B059762AD643CB00A2CCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B059752AD643CB00A2CCD5 /* Assets.xcassets */; };
 		67B059792AD643CB00A2CCD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B059782AD643CB00A2CCD5 /* Preview Assets.xcassets */; };
 		67B059802AD643EF00A2CCD5 /* MyWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0597F2AD643EF00A2CCD5 /* MyWebview.swift */; };
+		67B059822AD6A13A00A2CCD5 /* MyTextAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B059812AD6A13A00A2CCD5 /* MyTextAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		67B059752AD643CB00A2CCD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B059782AD643CB00A2CCD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67B0597F2AD643EF00A2CCD5 /* MyWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyWebview.swift; path = ../../SwiftUI_Webview_tutorial/SwiftUI_Webview_tutorial/MyWebview.swift; sourceTree = "<group>"; };
+		67B059812AD6A13A00A2CCD5 /* MyTextAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				67B0597F2AD643EF00A2CCD5 /* MyWebview.swift */,
 				67B059752AD643CB00A2CCD5 /* Assets.xcassets */,
 				67B059772AD643CB00A2CCD5 /* Preview Content */,
+				67B059812AD6A13A00A2CCD5 /* MyTextAlertView.swift */,
 			);
 			path = SwiftUI_JSCommunication_tutorail;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				67B059742AD643CA00A2CCD5 /* ContentView.swift in Sources */,
 				67B059802AD643EF00A2CCD5 /* MyWebview.swift in Sources */,
+				67B059822AD6A13A00A2CCD5 /* MyTextAlertView.swift in Sources */,
 				67B059722AD643CA00A2CCD5 /* SwiftUI_JSCommunication_tutorailApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
