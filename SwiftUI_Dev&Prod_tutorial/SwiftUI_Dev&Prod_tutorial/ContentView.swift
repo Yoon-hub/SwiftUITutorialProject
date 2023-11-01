@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    func subscribeTest() {
+        let publisher = ["won"].publisher
+
+        publisher
+            .map { _ in print(Thread.isMainThread) } // true
+            .map { print(Thread.isMainThread) } // false
+            .map { print(Thread.isMainThread) } // false
+            .sink { print(Thread.isMainThread) } // false
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -15,7 +26,10 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .padding()
+        .onAppear() {
+            subscribeTest()
+        }
+        
     }
 }
 
